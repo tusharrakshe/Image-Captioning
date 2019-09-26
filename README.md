@@ -3,22 +3,14 @@
 
 Image Captioning System that generates natural language captions for any image.
 
-The architecture for the model is inspired from "Show and Tell" [1] by Vinyals et al. The model is built using [Keras](https://keras.io/) library.
-
-The project also contains code for Attention LSTM layer, although not integrated in the model.
 
 ## Dataset
 The model is trained on [Flickr8k Dataset](https://illinois.edu/fb/sec/1713398)
 
 Although it can be trained on others like Flickr30k or MS COCO
 
-## Model
-<div align="center">
-  <img src="model.png"><br><br>
-</div>
-
 ## Performance
-The model has been trained for 20 epoches on 6000 training samples of Flickr8k Dataset. It acheives a `BLEU-1 = ~0.59` with 1000 testing samples.
+The model has been trained for 20 epoches on 6000 training samples of Flickr8k Dataset. It acheives a `BLEU-1 = ~0.60` with 1000 tes samples.
 
 ----------------------------------
 
@@ -28,10 +20,6 @@ The model has been trained for 20 epoches on 6000 training samples of Flickr8k D
 - numpy
 - h5py
 - progressbar2
-
-These requirements can be easily installed by:
-  `pip install -r requirements.txt`
-
 
 ## Scripts
 
@@ -43,8 +31,8 @@ These requirements can be easily installed by:
 ## Usage
 
 ### Pre-trained model
-1. Download pre-trained weights from [releases](https://github.com/Div99/Image-Captioning/releases)
-2. Move `model_weight.h5` to `models` directory
+1. Download pre-trained weights from repository.
+2. Make sure `model_weight.h5` to `models` directory
 3. Prepare data using `python prepare_data.py`
 4. For inference on example image, run: `python eval_model.py -i [img-path]`
 
@@ -62,18 +50,5 @@ After training, evaluation on an example image can be done by running:
 Image | Caption 
 --- | --- 
 <img src="imgs/dog.jpg" width="300"> | **Generated Caption:**  A white and black dog is running through the water
-<img src="imgs/ski.jpg" width="300"> | **Generated Caption:** man is skiing on snowy hill
-<img src="imgs/worker.jpg" width="300"> | **Generated Caption:** man in red shirt is walking down the street
+<img src="imgs/13.png" width="300"> | **Generated Caption:** man in red shirt is smilling
 
-----------------------------------
-
-## References
-[1] Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan. [Show and Tell: A Neural Image Caption Generator](https://arxiv.org/pdf/1411.4555.pdf)
-
-[2]	Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio. [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](https://arxiv.org/pdf/1502.03044.pdf)
-
-----------------------------------
-
-## License
-MIT License. See LICENSE file for details.
-"# Image-Captioning" 
