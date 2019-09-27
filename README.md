@@ -50,6 +50,6 @@ After training, evaluation on an example image can be done by running:
 Image | Caption 
 --- | --- 
 <img src="imgs/dog.jpg" width="300"> | **Generated Caption:**  A white and black dog is running through the water
-<img src="imgs/Tushar.jpg" width="300"> | **Generated Caption:** man in red shirt is smilling
-<img src="imgs/Group.jpg" width="300"> | **Generated Caption:** Group of people are sitting in front of an amusement the street
+<img src="imgs/Tushar.jpg" width="300"> | **Generated Caption:** man in checks shirt is smilling
+<img src="imgs/Group.jpg" width="300"> | **Generated Caption:** Group of people are standing in front of an amusement the street
 
